@@ -1,0 +1,63 @@
+# 《AI 回答你的那几秒里，到底发生了什么？》—— Token 概念片正片脚本
+# 格式：id|speaker|emotion|text ；[章节] 行开始新章节。分词数据均用 tiktoken o200k_base（GPT-4o）实测。
+[c0 开场]
+tf_a01|N|neutral|你每天都在问AI问题。
+tf_a02|N|neutral|但你有没有想过，它回答你的那几秒里，到底在干什么？
+tf_a03|N|neutral|我们从一句最简单的话开始。
+tf_a04|N|neutral|你问AI：“今天天气怎么样？”
+tf_a05|N|neutral|它看到的，其实不是这几个字，
+tf_a06|N|neutral|而是一串被切开的积木：今、天天、气、怎么样。
+tf_a07|N|neutral|“今天”被拆开了，“天天”反而粘在了一起。
+[c1 切积木]
+tf_b01|N|neutral|这些积木，就叫Token，中文叫“词元”。
+tf_b02|N|neutral|怎么切，不是语文老师定的，
+tf_b03|N|neutral|而是从海量文字里统计出来的：经常挨在一起出现的字，就被粘成一块。
+tf_b04|N|neutral|所以“苹果”“手机”“人工”“智能”，各自都是一整块。
+tf_b05|N|neutral|而“疑是地上霜”里，那个不太常见的“霜”字，
+tf_b06|N|neutral|甚至被劈成了两半，各占一块。
+tf_b07|N|neutral|英文也一样。你问它：strawberry里有几个r？
+tf_b08|N|neutral|在它眼里，strawberry整个就是一块积木，
+tf_b09|N|neutral|它根本看不见里面的字母。这就是很多AI会数错的原因。
+[c2 编号与词表]
+tf_c01|N|neutral|每一块积木，都有自己的编号。
+tf_c02|N|neutral|它的积木库，也就是“词表”，一共有二十万块。
+tf_c03|N|neutral|不管你说什么，都会先变成这二十万块里的一串编号。
+[c3 意思空间]
+tf_d01|N|neutral|但编号只是个名字，不代表意思。
+tf_d02|N|neutral|所以每块积木，还会被换成一长串数字。
+tf_d03|N|neutral|你可以把它想成，积木在一个“意思空间”里的坐标。
+tf_d04|N|neutral|意思相近的积木，会靠在一起：
+tf_d05|N|neutral|水果在这边，动物在那边，天气在另一边。
+tf_d06|N|neutral|真实的坐标有几千个维度，我们只画得出三维。
+[c4 注意力]
+tf_e01|N|neutral|光有坐标还不够。同一个“苹果”，
+tf_e02|N|neutral|在“我吃了一个苹果”里，是水果；
+tf_e03|N|neutral|在“苹果发布了新手机”里，是一家公司。
+tf_e04|N|neutral|所以在猜之前，每块积木都会回头，看一遍前面所有的积木，
+tf_e05|N|neutral|看谁跟自己关系最大，再挪一挪自己的坐标。
+tf_e06|N|neutral|这一步，就是大名鼎鼎的“注意力机制”。
+[c5 猜下一块]
+tf_f01|N|neutral|准备好了，开始猜。
+tf_f02|N|neutral|它会给二十万块积木，每一块都打一个分，
+tf_f03|N|neutral|分数越高，越可能是下一块。
+tf_f04|N|neutral|但它不一定每次都挑最高的那块，
+tf_f05|N|neutral|而是按概率抽一块。就是这一点点随机，
+tf_f06|N|neutral|让同一个问题问两次，答案会不一样。
+tf_f07|N|neutral|选中一块，接上，再带着整句话，猜下一块。
+tf_f08|N|neutral|一块，一块，又一块。你看到的整段回答，就是这样接出来的。
+[c6 三个怪现象]
+tf_g01|N|neutral|明白了这一点，AI的很多怪现象，就都说得通了。
+tf_g02|N|neutral|第一，它会“忘事”。
+tf_g03|N|neutral|它一次能看的积木是有上限的，叫“上下文窗口”。
+tf_g04|N|neutral|聊得太长，最前面的积木，就被挤出去了。
+tf_g05|N|neutral|第二，它会一本正经地胡说八道。
+tf_g06|N|neutral|因为它每一步，只是在挑“最像”的下一块，
+tf_g07|N|neutral|而“像”，不等于“对”。
+tf_g08|N|neutral|第三，它按Token收费。
+tf_g09|N|neutral|你发过去的每一块，它吐回来的每一块，都要算钱。
+tf_g10|N|neutral|中文大约一个半字算一块，同样的意思换个说法，价格都不一样。
+[c7 结尾]
+tf_h01|N|neutral|所以，下次AI回答你的时候，
+tf_h02|N|neutral|你可以想象：在那几秒里，它正在二十万块积木里，一块一块地接龙。
+tf_h03|N|neutral|一个简单的动作，重复成千上万次，就成了一段像模像样的回答。
+tf_h04|N|neutral|至于这算不算“思考”？我们评论区聊聊。

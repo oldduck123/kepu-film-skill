@@ -1,0 +1,9 @@
+{
+  "level": 0.05,
+  "duck": 0.55,
+  "end_swell": 1.7,
+  "cues": [
+    { "file": "music/bgm1.mp3", "start": 1.0, "end": "C('c1')+1.5", "fade_in": 1.5, "fade_out": 3.0 },
+    { "file": "music/bgm2.mp3", "start": "C('c1')-1.5", "end": "DUR", "fade_in": 3.0, "fade_out": 0 }
+  ]
+}

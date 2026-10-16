@@ -1,0 +1,12 @@
+node_modules/
+engine/fonts/
+__pycache__/
+*.pyc
+# per-film outputs and paid assets never go into the repo
+vo/
+out/
+music/
+*.mp3
+*.wav
+*.mp4
+.env

@@ -1,0 +1,5 @@
+[
+  { "sfx": "whoosh", "at": "SG('tp_a02',0)-0.4", "args": { "dur": 0.9 }, "gain": 0.05 },
+  { "sfx": "knock", "at": "SG('tp_a02',0)+0.45", "repeat": 4, "every": 0.32, "args": { "f": 240, "d": 0.07 }, "gain": 0.2 },
+  { "sfx": "blip", "at": "L('tp_b02')", "repeat": 4, "every": 0.35, "args": { "f": 1318, "d": 0.12 }, "gain": 0.05 }
+]
